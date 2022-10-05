@@ -35,7 +35,7 @@ return (
         <Link to='/category/suggested' style={{textDecoration: 'none'}}>
           <img
             src={suggestedCategoryImage}
-            alt='sell'
+            alt='suggested'
             className='exploreCategoryImg'
           />
           <p className='exploreCategoryName'>Suggested For You</p>
@@ -43,7 +43,7 @@ return (
         <Link to='/category/hot' style={{textDecoration: 'none'}}>
           <img
             src={hotCategoryImage}
-            alt='rent'
+            alt='hot'
             className='exploreCategoryImg'
           />
           <p className='exploreCategoryName'>Hot Right Now</p>

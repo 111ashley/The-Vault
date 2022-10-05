@@ -62,7 +62,7 @@ const Post = () => {
           slidesPerView={1}
           pagination={{ clickable: true }}
           modules={[Navigation, Pagination, Scrollbar, A11y]}
-          navigation={ true }
+          navigation={true}
           scrollbar={{ draggable: true }}
         >
           {/* loop through images and output swiper slide component for each one*/}
@@ -79,12 +79,10 @@ const Post = () => {
               ></div>
             </SwiperSlide>
           ))}
-          <div className="prev" />
-          <div className="next" />
         </Swiper>
         {/* <img src={post.imageUrls[0]} alt={post.name} className="postImg" /> */}
         <p className="postCaption">
-            {post.caption}
+          {post.caption}
           {/* {post.name}: {post.caption} */}
         </p>
       </div>
