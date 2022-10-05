@@ -3,13 +3,13 @@ import { Link, useNavigate, useParams } from "react-router-dom";
 import { Navigation, Pagination, Scrollbar, A11y } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
+import "swiper/css/navigation";
 import { getDoc, doc } from "firebase/firestore";
 import { db } from "../firebase.config";
 import Spinner from "../components/Spinner";
 import shareIcon from "../assets/svg/shareIcon.svg";
 import userEvent from "@testing-library/user-event";
 import { getAdditionalUserInfo } from "firebase/auth";
-
 
 // SwiperCore.use([Navigation, Pagination, Scrollbar, A11y]);
 const Post = () => {
@@ -39,6 +39,7 @@ const Post = () => {
   if (loading) {
     return <Spinner />;
   }
+
   return (
     <main>
       <div
@@ -61,7 +62,7 @@ const Post = () => {
           slidesPerView={1}
           pagination={{ clickable: true }}
           modules={[Navigation, Pagination, Scrollbar, A11y]}
-          navigation
+          navigation={ true }
           scrollbar={{ draggable: true }}
         >
           {/* loop through images and output swiper slide component for each one*/}
@@ -78,10 +79,13 @@ const Post = () => {
               ></div>
             </SwiperSlide>
           ))}
+          <div className="prev" />
+          <div className="next" />
         </Swiper>
         {/* <img src={post.imageUrls[0]} alt={post.name} className="postImg" /> */}
         <p className="postCaption">
-          {post.name}: {post.caption}
+            {post.caption}
+          {/* {post.name}: {post.caption} */}
         </p>
       </div>
     </main>

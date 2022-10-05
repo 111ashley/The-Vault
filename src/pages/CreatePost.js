@@ -198,7 +198,7 @@ function CreatePost() {
             value={name}
             onChange={onMutate}
             maxLength='32'
-            minLength='10'
+            minLength='1'
             required
           />
           <label className='formLabel'>Caption</label>

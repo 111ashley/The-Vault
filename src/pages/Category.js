@@ -63,7 +63,7 @@ const Category = () => {
         <p className="pageHeader">
           {params.categoryName === "original"
             ? "Outfits"
-            : "Inspiration"  === "hot" ? "Hot right now" : "Suggested for you"} 
+            : "Inspiration" } 
             {/* come back to this code. Hot is showing up as suggested*/}
         </p>
         {/* <p className="pageHeader">

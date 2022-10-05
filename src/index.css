@@ -12,7 +12,7 @@ body {
   background-color: #f2f4f8;
   margin: 0;
   box-sizing: border-box;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.2)), url(/src/assets/jpg/B1.webp);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(/src/assets/jpg/B1.webp);
   background-position: center;
   background-size: 100%;
   background-repeat: no-repeat;
@@ -370,6 +370,24 @@ button {
   height: 23vw;
 }
 
+.swiper-button-next:after {
+  color:white;
+  cursor: pointer;
+  background-color: #47e0f1;
+  border: solid 2px rgb(255, 255, 255);
+  border-radius: 50%;
+  padding: 11px 20px;
+  right: calc(50% - 40px)
+}
+.swiper-button-prev:after {
+  color:white;
+  cursor: pointer;
+  background-color: #47e0f1;
+  border: solid 2px rgb(255, 255, 255);
+  border-radius: 50%;
+  padding: 11px 20px;
+  left: calc(50% - 40px)
+}
 
 .swiper-pagination-bullet-active {
   background-color: #ffffff !important;
