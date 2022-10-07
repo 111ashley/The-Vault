@@ -105,7 +105,7 @@ button {
   color: #ffffff;
   font-weight: 600;
   font-size: 1.25rem;
-  width: 25%;
+  width: 100%;
   margin: 0;
   display: flex;
   align-items: center;
@@ -126,6 +126,17 @@ button {
   position: absolute;
   top: -3.4%;
   right: 20px;
+}
+.pageContainer2{
+  width: 95%;
+  max-width: 35rem;
+  border-radius: 6px;
+  border: solid 1px;
+  background-color: rgba(48, 47, 47, 0.541);
+  box-shadow: 0 1px 4px rgb(0 0 0 / 20%);
+  padding: 1rem;
+  text-align: left;
+  color: white;
 }
 .pageContainer {
   width: 95%;
@@ -155,7 +166,8 @@ button {
   }
 }
 @media (min-width: 1024px) {
-  .pageContainer {
+  .pageContainer,
+  .pageContainer2 {
     margin: 3rem auto;
   }
 }
@@ -803,6 +815,7 @@ button {
   display: flex;
   justify-content: center;
   align-items: center;
+  color: black
 }
 .formButtonActive {
   background-color: #47e0f1;
@@ -849,7 +862,7 @@ button {
 }
 
 .formInputFile {
-  width: 45%;
+  width: 85%;
 }
 .formInputFile::-webkit-file-upload-button {
   background-color: #47e0f1;
@@ -863,7 +876,7 @@ button {
 }
 
 .createPostButton {
-  margin-top: 5rem;
+  margin-top: 2rem;
   border: solid 1px black;
   
 }

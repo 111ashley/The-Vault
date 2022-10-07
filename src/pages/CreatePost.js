@@ -167,7 +167,7 @@ function CreatePost() {
       </header>
 
       <main>
-        <form onSubmit={submitHandler}>
+        <form className="pageContainer2"onSubmit={submitHandler}>
           <label className='formLabel'>Original / Inspiration</label>
           <div className='formButtons'>
             <button
